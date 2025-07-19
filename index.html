@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailing Yacht Xeremonia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/image-grid.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#sailing-background">Xeremonia</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sailing-background">Home</a></li>
+                <li><a href="#fuel-calculator">Dieseltank-Füllstand</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sailing-background" class="sailing-background">
+            <div class="sailing-background-content">
+                <h1>Sailing Yacht Xeremonia</h1>
+                <h2>X-412</h2>
+            </div>
+        </section>
+
+        <section id="fuel-calculator" class="fuel-calculator">
+            <div class="container">
+                <h2>Dieseltank-Füllstand Rechner</h2>
+                <div class="calculator-form">
+                    <div class="input-group">
+                        <label for="fuel-height">Tankhöhe (cm):</label>
+                        <input type="number" id="fuel-height" min="0" max="100" step="0.1" placeholder="Höhe in cm eingeben">
+                    </div>
+                    <button type="button" id="calculate-fuel">Berechnen</button>
+                    <div class="result" id="fuel-result">
+                        <div class="fuel-level-display">
+                            <div class="fuel-bar">
+                                <div class="fuel-fill" id="fuel-fill"></div>
+                            </div>
+                            <div class="fuel-info">
+                                <span id="fuel-volume">0.00 Liter</span>
+                                <span id="fuel-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    <footer>
+        <nav>
+            <div class="footercontent">                
+                <a href="#sailing-background">Xeremonia</a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Xeremonia. Built with ❤️ and code.</p>
+            <ul class="footer-menu">
+                <li class="footer-copyright-mobile"><span>&copy; 2025 Xeremonia. Built with ❤️ and code.</span></li>
+            </ul>
+            <div class="footer-hamburger">
+                <span class="footer-bar"></span>
+                <span class="footer-bar"></span>
+                <span class="footer-bar"></span>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/fuel-calculator.js"></script>
+</body>
+</html> 

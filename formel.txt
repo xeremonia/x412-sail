@@ -1,0 +1,6 @@
+V(h) = L × W × h - (1/2) × triangle_base × min(h, triangle_height) × (min(h, triangle_height)/triangle_height) × L
+
+L = 1.2
+W = .40
+triangle_base = .30
+triangle_height = .35
