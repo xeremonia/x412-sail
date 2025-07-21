@@ -88,9 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (footerMenu) footerMenu.classList.remove('active');
                 
                 // Smooth scroll to target
-                const headerHeight = document.querySelector('header').offsetHeight;
-                const targetPosition = targetElement.offsetTop - headerHeight;
-                
+                // const headerHeight = document.querySelector('header').offsetHeight;
+                // const targetPosition = targetElement.offsetTop - headerHeight;
+                const targetPosition = targetElement.offsetTop;
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
