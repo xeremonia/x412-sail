@@ -558,13 +558,13 @@ footer a:hover {
     }
     .sailing-background,
     .fuel-calculator {
-        height: 100vh;
+        height: 85svh;
+        height: 85vh; /* fallback for browsers that do not support svh */
     }
 }
 
 @media (max-width: 480px) {
     .sailing-background {
-        height: 60vh;
         background-position: center center;
         background-size: cover;
     }
@@ -575,7 +575,6 @@ footer a:hover {
         font-size: 1.2rem;
     }
     .fuel-calculator {
-        height: 60vh;
         background-position: center center;
         background-size: cover;
     }
